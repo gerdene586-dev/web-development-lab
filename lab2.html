@@ -20,10 +20,10 @@
         <br>
         <form action="тодорхойлолт">
             <label for="ovog">овог:</label>
-            <input type="text" id="ovog">
+            <input type="text" id="ovog" required>
             <button>болсон</button>
             <label for="ner">нэр:</label>
-            <input type="text" id="ner">
+            <input type="text" id="ner" required>
             <button type="submit">оруулах</button>
             <label for="register">регистор</label>
             <input type="text" id="register">
@@ -38,19 +38,19 @@
         <h1>оюутны мэдээлэл</h1>
         <p>оюутны мэдээлэл үнэн зөв байх естой!</p>
         <label for="ovog">овог</label>
-        <input type="text" id="ovog">
+        <input type="text" id="ovog" required>
         <button>болсон</button>
         <label for="ner">оюутны нэр:</label>
-        <input type="text" id="ner">
+        <input type="text" id="ner" required >
         <button>болсон</button>
         <label for="phone">утас:</label>
-        <input type="number" id="phone">
+        <input type="number" id="phone" minlength="8">
         <button>болсон</button>
         <label for="gmail">gmail</label>
-        <input type="email" id="gmail">
+        <input type="email" id="gmail" pattern="[A-Za-z]+">
         <button>болсон</button>
         <label for="nuuts">нууц үг</label>
-        <input type="password" id="nuuts">
+        <input type="password" id="nuuts" pattern="[A-Za-z]+">
         <button>болсон</button>
         <label for="huis">хүйс</label>
         <input type="radio" id="huis">
