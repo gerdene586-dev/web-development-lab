@@ -4,30 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>semantic бүртгэлтийн анкет веб
+    <title class="title">semantic бүртгэлтийн анкет веб
 
     </title>
+<link rel="stylesheet" href="lab3css.css">
 </head>
 
 <body>
     <header>
         <hr>
         <br>
-        <h1>оюутны байр орох анхан шатны анкент</h1>
+        <h1 class="oyutan_body page-title">оюутны байр орох анхан шатны анкент</h1>
         <hr>
         <br>
-        <p>оюутны дотуур байранд орох шалгуур анкент</p>
+        <p class="description">оюутны дотуур байранд орох шалгуур анкент</p>
         <br>
-        <form action="тодорхойлолт">
-            <label for="ovog">овог:</label>
-            <input type="text" id="ovog" required>
-            <button>болсон</button>
-            <label for="ner">нэр:</label>
-            <input type="text" id="ner" required>
-            <button type="submit">оруулах</button>
-            <label for="register">регистор</label>
-            <input type="text" id="register">
-            <button>болсон</button>
+        <form action="тодорхойлолт" class="form-area">
+            <label for="ovog" class="form-label">овог:</label>
+            <input type="text" id="ovog" class="input-field" required>
+            <button class="action-button">болсон</button>
+            <label for="ner" class="form-label">нэр:</label>
+            <input type="text" id="ner" class="input-field" required>
+            <button type="submit" class="action-button">оруулах</button>
+            <label for="register" class="form-label">регистор</label>
+            <input type="text" id="register" class="input-field">
+            <button class="action-button">болсон</button>
         </form>
 <br>
 <hr>
@@ -35,42 +36,42 @@
     <main>
         <hr>
         <br>
-        <h1>оюутны мэдээлэл</h1>
-        <p>оюутны мэдээлэл үнэн зөв байх естой!</p>
-        <label for="ovog">овог</label>
-        <input type="text" id="ovog" required>
-        <button>болсон</button>
-        <label for="ner">оюутны нэр:</label>
-        <input type="text" id="ner" required >
-        <button>болсон</button>
-        <label for="phone">утас:</label>
-        <input type="number" id="phone" minlength="8">
-        <button>болсон</button>
-        <label for="gmail">gmail</label>
-        <input type="email" id="gmail" pattern="[A-Za-z]+">
-        <button>болсон</button>
-        <label for="nuuts">нууц үг</label>
-        <input type="password" id="nuuts" pattern="[A-Za-z]+">
-        <button>болсон</button>
-        <label for="huis">хүйс</label>
-        <input type="radio" id="huis">
-        <button>болсон</button>
-        <label for="country">улс орон:</label>
-        <input type="checkbox">
-        <button>болсон</button>
-        <select name="country" id="country">
+        <h1 class="information section-title">оюутны мэдээлэл</h1>
+        <p class="true important-text">оюутны мэдээлэл үнэн зөв байх естой!</p>
+        <label for="ovog" class="form-label">овог</label>
+        <input type="text" id="ovog" class="input-field" required>
+        <button class="action-button">болсон</button>
+        <label for="ner" class="form-label">оюутны нэр:</label>
+        <input type="text" id="ner" class="input-field" required >
+        <button class="action-button">болсон</button>
+        <label for="phone" class="form-label">утас:</label>
+        <input type="number" id="phone" class="input-field" minlength="8">
+        <button class="action-button">болсон</button>
+        <label for="gmail" class="form-label">gmail</label>
+        <input type="email" id="gmail" class="input-field" pattern="[A-Za-z]+">
+        <button class="action-button">болсон</button>
+        <label for="nuuts" class="form-label">нууц үг</label>
+        <input type="password" id="nuuts" class="input-field" pattern="[A-Za-z]+">
+        <button class="action-button">болсон</button>
+        <label for="huis" class="form-label">хүйс</label>
+        <input type="radio" id="huis" class="input-field">
+        <button class="action-button">болсон</button>
+        <label for="country" class="form-label">улс орон:</label>
+        <input type="checkbox" class="input-field">
+        <button class="action-button">болсон</button>
+        <select name="country" id="country" class="country-select">
             <option value="mn">монгол</option>
             <option value="rus">орос</option>
             <option value="china">хятад</option>
         </select>
-        <label for=""></label>
-        <input type="text">
+        <label for="" class="form-label"></label>
+        <input type="text" class="input-field">
 
-        <button>илгээх</button>
-        <nav>
+        <button class="action-button">илгээх</button>
+        <nav class="interest-nav">
             <br>
-            <p>миний сонирхол</p>
-            <ul>
+            <p class="description">миний сонирхол</p>
+            <ul class="interest-list">
                 <li>мото унах </li>
                 <li>хавар мал төлөлүүлэх </li>
                 <li>ууланд алхах</li>
@@ -82,32 +83,32 @@
     <footer>
         <hr>
         <br>
-        <p>миний дүн </p>
-        <table border="1">
-            <thead>
+        <p class="description">миний дүн </p>
+        <table border="1" class="grade-table">
+            <thead class="table-header">
                 <tr>
                     <th>хичээлийн нэр</th>
                     <th>хичээлийн код</th>
                     <th>дүн</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="table-body">
                 <tr>
-                    <td>математик 1</td>
-                    <td>трн890</td>
-                    <td>67</td>
+                    <td class="table-data">математик 1</td>
+                    <td class="table-data">трн890</td>
+                    <td class="table-data">67</td>
                 </tr>
                 <tr>
-                    <td>монгол хэл</td>
-                    <td>трн891</td>
-                    <td>98</td>
+                    <td class="table-data">монгол хэл</td>
+                    <td class="table-data">трн891</td>
+                    <td class="table-data">98</td>
                 </tr>
-                <tr><td>орос хэл</td>
-                    <td>трн893</td>
-                    <td>89</td></tr>
+                <tr><td class="table-data">орос хэл</td>
+                    <td class="table-data">трн893</td>
+                    <td class="table-data">89</td></tr>
             </tbody>
         </table>
-        <p>энэ мэдээлэл нь миний өөрийн мэдээл биш зохиомол мэдээлэл тул та яаж ашиглсан болно </p>
+        <p class="footer-text">энэ мэдээлэл нь миний өөрийн мэдээл биш зохиомол мэдээлэл тул та яаж ашиглсан болно </p>
     </footer>
 </body>
 
